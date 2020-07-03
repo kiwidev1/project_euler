@@ -1,13 +1,13 @@
 let result1 = 0;
 let result2 = 0;
-for (naturalNumber = 1; naturalNumber <= 10; naturalNumber++) {
+for (naturalNumber = 1; naturalNumber <= 100; naturalNumber++) {
   function squareNaturalNumber(num) {
     return Math.pow(num, 2);
   }
   let numberSquare = squareNaturalNumber(naturalNumber);
   result1 += numberSquare;
 }
-for (naturalNumber = 1; naturalNumber <= 10; naturalNumber++) {
+for (naturalNumber = 1; naturalNumber <= 100; naturalNumber++) {
   result2 += naturalNumber;
   function squareNaturalNumber(num) {
     return Math.pow(num, 2);
