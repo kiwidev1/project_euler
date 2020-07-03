@@ -14,6 +14,7 @@
 // console.log(typeof number);
 // console.log(typeof numbertoString);
 
+let maxValue = -1;
 for (let naturalNumber = 100; naturalNumber <= 999; naturalNumber++) {
   for (let nextNumber = naturalNumber; nextNumber <= 999; nextNumber++) {
     let lookedNumber = naturalNumber * nextNumber;
@@ -29,9 +30,10 @@ for (let naturalNumber = 100; naturalNumber <= 999; naturalNumber++) {
 
     if (numberToBeChecked === result) {
       numberToBeChecked = +numberToBeChecked;
-      console.log(numberToBeChecked);
+      if (maxValue < numberToBeChecked) {
+        maxValue = numberToBeChecked;
+      }
     }
   }
 }
-
-
+console.log(maxValue);
