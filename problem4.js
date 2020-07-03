@@ -14,8 +14,8 @@
 // console.log(typeof number);
 // console.log(typeof numbertoString);
 
-for (let naturalNumber = 10; naturalNumber <= 99; naturalNumber++) {
-  for (let nextNumber = naturalNumber; nextNumber <= 99; nextNumber++) {
+for (let naturalNumber = 100; naturalNumber <= 999; naturalNumber++) {
+  for (let nextNumber = naturalNumber; nextNumber <= 999; nextNumber++) {
     let lookedNumber = naturalNumber * nextNumber;
     let numberToBeChecked = lookedNumber.toString();
 
@@ -28,6 +28,7 @@ for (let naturalNumber = 10; naturalNumber <= 99; naturalNumber++) {
     let result = reverseString(numberToBeChecked);
 
     if (numberToBeChecked === result) {
+      numberToBeChecked = +numberToBeChecked;
       console.log(numberToBeChecked);
     }
   }
