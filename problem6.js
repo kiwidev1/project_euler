@@ -1,18 +1,16 @@
 let result1 = 0;
 let result2 = 0;
+
+function squareNaturalNumber(num) {
+  return Math.pow(num, 2);
+}
+
 for (naturalNumber = 1; naturalNumber <= 100; naturalNumber++) {
-  function squareNaturalNumber(num) {
-    return Math.pow(num, 2);
-  }
   let numberSquare = squareNaturalNumber(naturalNumber);
   result1 += numberSquare;
-}
-for (naturalNumber = 1; naturalNumber <= 100; naturalNumber++) {
   result2 += naturalNumber;
-  function squareNaturalNumber(num) {
-    return Math.pow(num, 2);
-  }
 }
+
 let squareOfTheSum = squareNaturalNumber(result2);
 console.log(result1);
 console.log(squareOfTheSum);
