@@ -8,14 +8,16 @@ function isPrime(num) {
   return true;
 }
 
-for (let number = 2; number <= 13; number++) {
+for (let number = 2; number <= 17; number++) {
   let primeNumber = isPrime(number);
+  let arrayLength = primeNumbersList.length;
   if (primeNumber === true) {
     primeNumbersList.push(number);
+  }
+  if (arrayLength === 6) {
+    break;
   }
 }
 
 let lastNumber = primeNumbersList[primeNumbersList.length - 1];
-console.log(primeNumbersList);
-console.log(primeNumbersList.length);
 console.log(lastNumber);
