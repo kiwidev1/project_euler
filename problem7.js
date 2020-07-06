@@ -8,13 +8,13 @@ function isPrime(num) {
   return true;
 }
 
-for (let number = 2; number <= 17; number++) {
+for (let number = 2; ; number++) {
   let primeNumber = isPrime(number);
   let arrayLength = primeNumbersList.length;
   if (primeNumber === true) {
     primeNumbersList.push(number);
   }
-  if (arrayLength === 6) {
+  if (arrayLength === 10001) {
     break;
   }
 }
